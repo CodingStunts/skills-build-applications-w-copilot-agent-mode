@@ -17,6 +17,7 @@ async function seedDatabase() {
     console.log('Connected to octofit_db');
     console.log('Seed the octofit_db database with test data');
 
+    
     await Promise.all([
       Activity.deleteMany({}),
       LeaderboardEntry.deleteMany({}),
